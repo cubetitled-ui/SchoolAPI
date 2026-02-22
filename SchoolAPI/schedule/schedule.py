@@ -1,10 +1,9 @@
-import aiohttp
-import asyncio
-import json
-from utils.classCreater import JsonToClassConverter
-from errors.errors import TokenError, DnevnikError
-from student.student import Student
-from typing import Union
+import aiohttp  # type: ignore  
+import asyncio  # type: ignore  
+import json  # type: ignore  
+from SchoolAPI.utils.classCreater import JsonToClassConverter  # type: ignore  
+from SchoolAPI.errors.errors import TokenError, DnevnikError  # type: ignore  
+from SchoolAPI.student.student import Student  # type: ignore  
 
 
 class Schedule:

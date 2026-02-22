@@ -1,10 +1,10 @@
-import aiohttp # type: ignore
-import asyncio
-import json
-from typing import Union
-from utils.classCreater import JsonToClassConverter
-from errors.errors import TokenError, DnevnikError
-from student.student import Student
+import aiohttp  # type: ignore  
+import asyncio  # type:ignore 
+import json  # type:ignore 
+from typing import Union  
+from SchoolAPI.utils.classCreater import JsonToClassConverter   
+from SchoolAPI.errors.errors import TokenError, DnevnikError   
+from SchoolAPI.student.student import Student   
 
 class Homeworks:
     def __init__(self, student: Student):

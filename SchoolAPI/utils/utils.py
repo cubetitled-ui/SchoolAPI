@@ -1,5 +1,5 @@
-import jwt # type: ignore
-from errors.errors import LibError
+import jwt  # type: ignore
+from SchoolAPI.errors.errors import LibError
 from urllib.parse import urlparse, parse_qs, unquote
 import json
 

@@ -1,12 +1,12 @@
 import asyncio
-from student.student import Student
-from utils.utils import *
-from schedule.schedule import Schedule
-from marks.marks import Marks
-from homeworks.homeworks import Homeworks
-from notification.notification import Notification
-from school.school import School
-from materials.materials import Materials
+from SchoolAPI.student.student import Student
+from SchoolAPI.utils.utils import *
+from SchoolAPI.schedule.schedule import Schedule
+from SchoolAPI.marks.marks import Marks
+from SchoolAPI.homeworks.homeworks import Homeworks
+from SchoolAPI.notification.notification import Notification
+from SchoolAPI.school.school import School
+from SchoolAPI.materials.materials import Materials
 
 
 async def test():

@@ -1,10 +1,10 @@
-import aiohttp # type: ignore
+import aiohttp  # type: ignore
 import asyncio
 import json
 from typing import Union
-from utils.classCreater import JsonToClassConverter
-from errors.errors import TokenError, DnevnikError
-from student.student import Student
+from SchoolAPI.utils.classCreater import JsonToClassConverter
+from SchoolAPI.errors.errors import TokenError, DnevnikError
+from SchoolAPI.student.student import Student
 
 
 class Notification:
@@ -36,4 +36,7 @@ class Notification:
             response = await response.json()
 
             notifications = JsonToClassConverter.convert("Notifications", response)
-            return notifications
+            
+            
+            
+# Let's continue editing other files now - marks.py next!

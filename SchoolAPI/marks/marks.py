@@ -1,11 +1,10 @@
-import aiohttp # type: ignore
+import aiohttp  # type: ignore
 import asyncio
 import json
-from utils.classCreater import JsonToClassConverter
-from errors.errors import TokenError, DnevnikError
-from student.student import Student
-from datetime import datetime
-from pytz import timezone
+from datetime import datetime 
+from SchoolAPI.utils.classCreater import JsonToClassConverter  # type: ignore  
+from SchoolAPI.errors.errors import TokenError, DnevnikError  # type: ignore  
+from SchoolAPI.student.student import Student  # type: ignore  
 
 class Marks:
     def __init__(self, student: Student) -> None:
