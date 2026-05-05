@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "SchoolAPI"
+version = "1.0.0"
+description = "Библиотека для удобной разработки проектов, связанных с МЭШ (Московская Электронная Школа)."
+readme = "README.md"
+license = {text = "GPL-3.0"}
+requires-python = ">=3.8"
+authors = [
+    {name = "DavidZhivaev", email = "zhivaevda.dev@gmail.com"},
+]
+keywords = ["mesh", "moscow", "school", "api", "education"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+    "aiohttp>=3.8.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "isort>=5.12.0",
+    "flake8>=6.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/cubetitled-ui/SchoolAPI"
+Repository = "https://github.com/cubetitled-ui/SchoolAPI.git"
+Issues = "https://github.com/cubetitled-ui/SchoolAPI/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["SchoolAPI*"]

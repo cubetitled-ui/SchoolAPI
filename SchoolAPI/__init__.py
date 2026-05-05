@@ -1,4 +1,3 @@
-# SchoolAPI - Библиотека для работы с МЭШ API
 from .student.student import Student
 from .schedule.schedule import Schedule
 from .marks.marks import Marks
@@ -9,10 +8,10 @@ from .materials.materials import Materials
 
 __all__ = [
     "Student",
-    "Schedule", 
+    "Schedule",
     "Marks",
     "Homeworks",
     "Notification",
     "School",
-    "Materials"
+    "Materials",
 ]
